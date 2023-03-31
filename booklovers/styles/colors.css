@@ -1,0 +1,10 @@
+:root {
+    /*#### LIGHT THEME ####*/
+    --primary-colour-light: hsl(0, 100%, 50%);
+
+
+
+    /*#### DARK THEME ####*/
+    --primary-colour-dark: hsl(0, 100%, 50%);
+
+}

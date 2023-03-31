@@ -1,0 +1,58 @@
+@import url(fonts.css);
+@import url(colors.css);
+
+/* #### ALL DOCUMENT #### */
+body {
+    font-family: 'Proxima Nova Regular';
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+/* #### HEADERS, TITLES #### */
+h1 {
+    font-family: 'Proxima Nova Bold';
+    font-size: 2.5em;
+    line-height: 1.2em;
+    
+}
+
+.big-title {
+    font-size: 3.6em;
+}
+
+h2 {
+    font-family: 'Proxima Nova Bold';
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: 'Proxima Nova Bold';
+    font-size: 1.55em;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-family: 'Proxima Nova Bold';
+    font-size: 1.25em;
+    line-height: 1.2em;
+}
+
+/* #### QUOTES #### */
+q, cite, blockquote p {
+    font-family: 'Proxima Nova Regular Italic';
+    font-size: 1.1em;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+/* #### LINKS #### */
+a {
+    color: blue;
+}
