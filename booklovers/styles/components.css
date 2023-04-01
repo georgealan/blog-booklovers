@@ -1,11 +1,235 @@
 @import url(reset.css);
 @import url(colors.css);
 
-/*#### NAVBAR ####*/
+/*#### SPACES ####*/
+.header-space {
+    margin-top: 6em;
+}
 
+/*#### NAVBAR ####*/
 .logo {
     width: auto;
     height: 50px;
 }
 
+.container_nav {
+    background-color: var(--primary-100);
+    height: 60px;
+}
+
+#navbar {
+    align-items: center;
+}
+
+nav a {
+    margin-right: 1.2em;
+}
+
 /*#### HERO SECTION ####*/
+.container_hero {
+    background-color: var(--primary-100);
+}
+
+.character {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    display: grid;
+    align-content: center;
+}
+
+/* #### BADGES #### */
+.badge {
+    border-radius: 1em;
+    padding: 0 1.2em;
+}
+
+.badge-must-read {
+    background-color: var(--green-500);
+}
+
+.badge-breathtaking {
+    background-color: var(--primary-500);
+}
+
+.badge-bad {
+    background-color: var(--red-500);
+}
+
+.badge-middling {
+    background-color: var(--blue-500);
+}
+
+.badge-boring {
+    background-color: var(--yellow-500);
+}
+
+
+/* #### WRITER INFO #### */
+.writer-info {
+    padding-left: 0;
+    margin: 8px 0 0;
+}
+
+.writer-info li {
+    display: inline;
+}
+
+
+/* #### AVATAR #### */
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+/* #### RECENT SECTION #### */
+#recent {
+    margin-top: 6em;
+}
+
+.recent-lg {
+    height: 640px;
+    padding: 0 2em;
+    background-image: linear-gradient(to bottom, hsl(222, 78%, 84%, 0.1), hsl(0, 0%, 100%)),
+    url("/assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    grid-row: span 2;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+.recent-img {
+    object-fit: cover
+}
+
+.recent-md {
+    height: 304px;
+    padding: 2em;
+    background-image: linear-gradient(to bottom, hsl(158, 58%, 80%, 0.6), hsl(0, 0%, 100%)),
+    url("/assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+.recent-sm {
+    height: 304px;
+    padding: 0.5em;
+    background-image: linear-gradient(to bottom, hsl(26, 60%, 90%, 0.6), hsl(0, 0%, 100%)),
+    url("/assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+
+/* #### TOP-WRITERS SECTION #### */
+#top-writers {
+    margin-top: 6em;
+}
+
+.top-writers-sm {
+    height: 248px;
+    padding: 0.9em;
+    background-image: linear-gradient(to bottom, hsl(26, 60%, 90%, 0.6), hsl(0, 0%, 100%)),
+    url("/assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+
+/* #### COMIC-BOOK SECTION #### */
+#comic-book {
+    margin-top: 6em;
+}
+
+.box-type-03 {
+    
+}
+
+.cover {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 1em 1em 0 0;
+}
+
+.card-block ul {
+    margin-top: 2em;
+}
+
+
+/* #### TECHNICAL SECTION #### */
+#technical {
+    margin-top: 6em;
+}
+
+
+
+/* #### LITERATURE SECTION #### */
+#literature {
+    margin-top: 6em;
+}
+
+/* #### SUBSCRIBE SECTION #### */
+#subscribe {
+    margin-top: 7em;
+    background-color: var(--primary-100);
+    padding: 4em;
+    border-radius: 1em;
+}
+
+.box-subscribe {
+   
+}
+
+.subscribe-text-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;   
+}
+
+/* #### FOOTER SECTION #### */
+.container_footer {
+    background-color: var(--gray-700);
+    margin-top: 6em;
+}
+
+#footer h4 {
+    color: var(--gray-100);
+}
+
+
+@media (max-width: 990px) {
+  .recent-lg {
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 575px) {
+    #navbar input {
+        display: none;
+    }
+
+    .recent-lg {
+        grid-row: span 1;
+      }
+}

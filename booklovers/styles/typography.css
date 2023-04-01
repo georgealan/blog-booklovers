@@ -9,8 +9,13 @@ body {
     color: var(--black);
 }
 
+/* #### PARAGRAPHS #### */
 p {
     margin: 0;
+}
+
+.small-p {
+    font-size: 14px;
 }
 
 /* #### HEADERS, TITLES #### */
@@ -80,15 +85,25 @@ nav a:active, a:hover {
     color: var(--primary-500);
 }
 
+.badge {
+    font-family: 'Proxima Nova Bold';
+    font-size: 0.7em;
+}
+
+/* #### LIST #### */
+ul li {
+    font-size: 14px;
+}
+
 /* #### MEDIA QUERIES #### */
-@media (max-width: 720px) {
+@media (max-width: 990px) {
     .big-title {
         font-size: 2.7em;
         color: var(--black);
     }
 }
 
-@media (max-width: 465px) {
+@media (max-width: 575px) {
     .big-title {
         font-size: 2em;
         color: var(--black);

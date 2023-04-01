@@ -1,4 +1,8 @@
 /* #### GRID 12 COLUMNS #### */
+.general-grid {
+    display: grid;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -7,160 +11,138 @@
     margin: 0 auto;
 }
 
-.grid-col-span-2 {
+.col-lg-span-2 {
     grid-column: span 2;
 }
 
-.grid-col-span-3 {
+.col-lg-span-3 {
     grid-column: span 3;
 }
 
-.grid-col-span-4 {
+.col-lg-span-4 {
     grid-column: span 4;
 }
 
-.grid-col-span-5 {
+.col-lg-span-5 {
     grid-column: span 5;
 }
 
-.grid-col-span-6 {
+.col-lg-span-6 {
     grid-column: span 6;
 }
 
-.grid-col-span-7 {
+.col-lg-span-7 {
     grid-column: span 7;
 }
 
-.grid-col-span-8 {
+.col-lg-span-8 {
     grid-column: span 8;
 }
 
-.grid-col-span-9 {
+.col-lg-span-9 {
     grid-column: span 9;
 }
 
-.grid-col-span-10 {
+.col-lg-span-10 {
     grid-column: span 10;
+}
+
+.col-lg-span-11 {
+    grid-column: span 11;
+}
+
+.col-lg-span-12 {
+    grid-column: span 12;
+}
+
+.row-lg-span-2 {
+    grid-row: span 2;
 }
 
 /*
 Use grid-row: span 2 for span 2 or more rows
 */
 
-/* #### NAVBAR #### */
-.container_nav {
-    background-color: var(--primary-100);
-    height: 60px;
-}
-
-.logo {
-    
-}
-
-#navbar {
-    align-items: center;
-}
-
-nav a {
-    margin-right: 40px;
-}
-
-/* #### HERO SECTION #### */
-.container_hero {
-    background-color: var(--primary-100);
-}
-
-.character {
-    width: 100%;
-    height: auto;
-}
-
-.text-box {
-    display: grid;
-    /* align-items: center; */
-    align-content: center;
-}
-
 /* #### RECENT SECTION #### */
-
-
-
-/* #### COMIC-BOOK SECTION #### */
-
-
-
-
-/* #### TECHNICAL SECTION #### */
-
-
-
-
-/* #### LITERATURE SECTION #### */
-
-
-
-
-/* #### RECENT SECTION #### */
-/* #### RECENT SECTION #### */
-
-@media (max-width: 720px) {
+@media (max-width: 990px) {
     .grid {
         grid-template-columns: repeat(8, 1fr);
         gap: 0.8em;
         max-width: 95vw;
     }
 
-    .grid-tablet-col-span-2 {
+    .col-md-span-1 {
+        grid-column: span 1;
+    }
+
+    .col-md-span-2 {
         grid-column: span 2;
     }
     
-    .grid-tablet-col-span-3 {
+    .col-md-span-3 {
         grid-column: span 3;
     }
     
-    .grid-tablet-col-span-4 {
+    .col-md-span-4 {
         grid-column: span 4;
     }
     
-    .grid-tablet-col-span-5 {
+    .col-md-span-5 {
         grid-column: span 5;
     }
     
-    .grid-tablet-col-span-6 {
+    .col-md-span-6 {
         grid-column: span 6;
     }
     
-    .grid-tablet-col-span-7 {
+    .col-md-span-7 {
         grid-column: span 7;
     }
     
-    .grid-tablet-col-span-8 {
+    .col-md-span-8 {
         grid-column: span 8;
     }
-
-    
 }
 
-@media (max-width: 468px) {
+@media (max-width: 575px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 0.5em;
     }
 
-    .grid-mobile-col-span-2 {
+    .col-sm-span-1 {
+        grid-column: span 1;
+    }
+
+    .col-sm-span-2 {
         grid-column: span 2;
     }
     
-    .grid-mobile-col-span-3 {
+    .col-sm-span-3 {
         grid-column: span 3;
     }
     
-    .grid-mobile-col-span-4 {
+    .col-sm-span-4 {
         grid-column: span 4;
+    }
+
+    .col-sm-1 {
+        grid-column: 1;
+    }
+
+    .col-sm-2 {
+        grid-column: 2;
+    }
+    
+    .col-sm-3 {
+        grid-column: 3;
+    }
+    
+    .col-sm-4 {
+        grid-column: 4;
     }
 
     .text-box {
         order: 2;
     }
 }
-
