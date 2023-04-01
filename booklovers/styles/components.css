@@ -1,0 +1,11 @@
+@import url(reset.css);
+@import url(colors.css);
+
+/*#### NAVBAR ####*/
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+
+/*#### HERO SECTION ####*/

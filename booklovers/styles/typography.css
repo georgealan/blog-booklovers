@@ -1,47 +1,61 @@
-@import url(fonts.css);
 @import url(colors.css);
+@import url(fonts.css);
 
 /* #### ALL DOCUMENT #### */
 body {
     font-family: 'Proxima Nova Regular';
     font-size: 18px;
     line-height: 1.6em;
+    color: var(--black);
+}
+
+p {
+    margin: 0;
 }
 
 /* #### HEADERS, TITLES #### */
 h1 {
     font-family: 'Proxima Nova Bold';
     font-size: 2.5em;
-    line-height: 1.2em;
-    
+    line-height: 0.9em;
+    color: var(--black);
+    margin: 0;
 }
 
 .big-title {
-    font-size: 3.6em;
+    font-size: 4em;
+    color: var(--black);
 }
 
 h2 {
     font-family: 'Proxima Nova Bold';
     font-size: 2em;
     line-height: 1.2em;
+    color: var(--black);
+    margin: 0;
 }
 
 h3 {
     font-family: 'Proxima Nova Bold';
     font-size: 1.55em;
     line-height: 1.2em;
+    color: var(--black);
+    margin: 0;
 }
 
 h4 {
     font-family: 'Proxima Nova Bold';
     font-size: 1.25em;
     line-height: 1.2em;
+    color: var(--black);
+    margin: 0;
 }
 
 /* #### QUOTES #### */
 q, cite, blockquote p {
     font-family: 'Proxima Nova Regular Italic';
     font-size: 1.1em;
+    color: var(--gray-700);
 }
 
 blockquote p::before {
@@ -54,5 +68,44 @@ blockquote p::after {
 
 /* #### LINKS #### */
 a {
-    color: blue;
+    color: var(--blue-500);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav a:active, a:hover {
+    color: var(--primary-500);
+}
+
+/* #### MEDIA QUERIES #### */
+@media (max-width: 720px) {
+    .big-title {
+        font-size: 2.7em;
+        color: var(--black);
+    }
+}
+
+@media (max-width: 465px) {
+    .big-title {
+        font-size: 2em;
+        color: var(--black);
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 215px) {
+    .big-title {
+        font-size: 1.3em;
+        color: var(--black);
+    }
+
+    h2 {
+        font-size: 0.7em;
+    }
 }
