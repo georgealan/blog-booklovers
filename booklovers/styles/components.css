@@ -13,12 +13,15 @@
 }
 
 .container_nav {
-    background-color: var(--primary-100);
+    background-color: hsl(26, 60%, 90%, 0.4);
+    backdrop-filter: blur(6px);
     height: 60px;
+    position: sticky;
+    top: 0;
 }
 
 #navbar {
-    align-items: center;
+    align-items: center; 
 }
 
 nav a {
@@ -28,6 +31,7 @@ nav a {
 /*#### HERO SECTION ####*/
 .container_hero {
     background-color: var(--primary-100);
+    background: linear-gradient(to bottom, hsl(26, 60%, 90%), hsl(0, 0%, 100%));
 }
 
 .character {
@@ -94,7 +98,7 @@ nav a {
 
 .recent-lg {
     height: 640px;
-    padding: 0 2em;
+    padding: 0 2em 2em 2em;
     background-image: linear-gradient(to bottom, hsl(222, 78%, 84%, 0.1), hsl(0, 0%, 100%)),
     url("/assets/images/post-covers/post-img-01.png");
     background-size: cover;
@@ -153,6 +157,8 @@ nav a {
     display: grid;
     justify-items: left;
     align-content: end;
+    padding: 10px 10px 20px 10px;
+    border-radius: 1em;
 }
 
 
@@ -162,13 +168,18 @@ nav a {
 }
 
 .box-type-03 {
-    
+    padding: 10px 10px 20px 10px;
+    border-radius: 1em;
 }
 
 .cover {
     width: 100%;
     object-fit: fill;
     border-radius: 1em 1em 0 0;
+}
+
+.card-block {
+    
 }
 
 .card-block ul {
@@ -194,10 +205,7 @@ nav a {
     background-color: var(--primary-100);
     padding: 4em;
     border-radius: 1em;
-}
-
-.box-subscribe {
-   
+    border: 0.3em solid var(--gray-700);
 }
 
 .subscribe-text-box {
@@ -217,6 +225,10 @@ nav a {
     color: var(--gray-100);
 }
 
+.copyright {
+    background-color: var(--gray-900);
+}
+
 
 @media (max-width: 990px) {
   .recent-lg {
@@ -231,5 +243,5 @@ nav a {
 
     .recent-lg {
         grid-row: span 1;
-      }
+    }
 }

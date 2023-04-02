@@ -73,7 +73,13 @@ blockquote p::after {
 
 /* #### LINKS #### */
 a {
-    color: var(--blue-500);
+    color: inherit;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+a:hover {
+    text-decoration-color: var(--black);
 }
 
 nav a {
