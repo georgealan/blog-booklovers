@@ -318,6 +318,10 @@ nav a {
 }
 
 /* #### ASIDE #### */
+#aside {
+    margin-top: 4em;
+}
+
 .text-tools {
     display: flex;
     position: sticky;
