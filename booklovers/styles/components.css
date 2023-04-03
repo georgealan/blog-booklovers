@@ -12,7 +12,11 @@
     height: 50px;
 }
 
-.container_nav {
+.content-nav {
+    align-items: center;
+}
+
+#navbar {
     background-color: hsl(26, 60%, 90%, 0.4);
     backdrop-filter: blur(6px);
     height: 60px;
@@ -20,18 +24,18 @@
     top: 0;
 }
 
-#navbar {
-    align-items: center; 
-}
-
 nav a {
     margin-right: 1.2em;
 }
 
 /*#### HERO SECTION ####*/
-.container_hero {
+#hero {
     background-color: var(--primary-100);
     background: linear-gradient(to bottom, hsl(26, 60%, 90%), hsl(0, 0%, 100%));
+}
+
+.content-hero {
+    padding: 1em;
 }
 
 .character {
@@ -42,6 +46,11 @@ nav a {
 .text-box {
     display: grid;
     align-content: center;
+}
+
+/* #### MAIN CONTENT #### */
+.main-content {
+    padding: 1em; 
 }
 
 /* #### BADGES #### */
@@ -98,7 +107,7 @@ nav a {
 
 .recent-lg {
     height: 640px;
-    padding: 0 2em 2em 2em;
+    padding: 0 1em 2em 1em;
     background-image: linear-gradient(to bottom, hsl(222, 78%, 84%, 0.1), hsl(0, 0%, 100%)),
     url("/assets/images/post-covers/post-img-01.png");
     background-size: cover;
@@ -116,7 +125,7 @@ nav a {
 
 .recent-md {
     height: 304px;
-    padding: 2em;
+    padding: 0 1em 2em 1em;
     background-image: linear-gradient(to bottom, hsl(158, 58%, 80%, 0.6), hsl(0, 0%, 100%)),
     url("/assets/images/post-covers/post-img-01.png");
     background-size: cover;
@@ -129,7 +138,7 @@ nav a {
 
 .recent-sm {
     height: 304px;
-    padding: 0.5em;
+    padding: 0 1em 2em 1em;
     background-image: linear-gradient(to bottom, hsl(26, 60%, 90%, 0.6), hsl(0, 0%, 100%)),
     url("/assets/images/post-covers/post-img-01.png");
     background-size: cover;
@@ -168,7 +177,6 @@ nav a {
 }
 
 .box-type-03 {
-    padding: 10px 10px 20px 10px;
     border-radius: 1em;
 }
 
@@ -176,10 +184,6 @@ nav a {
     width: 100%;
     object-fit: fill;
     border-radius: 1em 1em 0 0;
-}
-
-.card-block {
-    
 }
 
 .card-block ul {
@@ -216,7 +220,11 @@ nav a {
 }
 
 /* #### FOOTER SECTION #### */
-.container_footer {
+.content-footer {
+    
+}
+
+#footer {
     background-color: var(--gray-700);
     margin-top: 6em;
 }
@@ -229,6 +237,7 @@ nav a {
     background-color: var(--gray-900);
 }
 
+/* #### FOOTER SECTION #### */
 
 @media (max-width: 990px) {
   .recent-lg {

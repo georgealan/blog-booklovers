@@ -107,6 +107,10 @@ ul li {
         font-size: 2.7em;
         color: var(--black);
     }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 575px) {

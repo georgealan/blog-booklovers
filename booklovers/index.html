@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="container_nav">
-        <header id="navbar" class="grid">
+    <header id="navbar">
+        <div class="content-nav grid">
             <picture class="col-lg-span-2 col-md-span-1 col-sm-span-1">
                 <source srcset="#" media="(min-width:465)" type="image/svg+xml">
                 <img class="logo" src="assets/images/Booklovers-logo.svg" type="image/svg+xml" alt="logo booklovers">
@@ -22,24 +22,24 @@
             </nav>        
             
             <input type="search" class="col-lg-span-3 col-md-span-3">
-        </header>
-    </div>
-
-    <div class="container_hero">
-        <section id="hero" class="grid">
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="content-hero grid">
             <div class="text-box col-lg-span-6 col-md-span-4 col-sm-span-4">
-                <h1 class="big-title">Share Reading Experiences</h1>
+                <h1 class="big-title">Share Your Reading Experiences</h1>
                 <h2>With the World</h2>
-                <p>Write articles about your reading experiences and help other readers chose their next adventures</p>
+                <p><br>Write articles about your reading experiences and help other readers chose their next adventures</p>
             </div>
             
             <picture class="col-lg-span-6 col-md-span-4 col-sm-span-4">
                 <img class="character" src="/assets/images/character-reading-book.png" alt="3d character reading a book sitting on a chair with a lamp on the side">
             </picture>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <main class="content">
+    <main class="main-content">
         <section id="recent" class="grid">
             <h2 class="col-lg-span-12 col-md-span-8 col-sm-span-4">Recent Articles</h2>
             <div class="recent-lg col-lg-span-6 col-md-span-8 col-sm-span-4">
@@ -59,7 +59,6 @@
                 <div class="text-recent-container">
                     <span class="badge badge-must-read">Must Read</span>
                     <a href="pages/post.html"><h2>The Lord of the Rings</h2></a>
-                    <p></p>
                     <ul class="writer-info">
                         <li><img src="assets/images/avatars/Avatar-01.png" class="avatar" alt="avatar"><span>by Leticia Sanches</span></li>
                         <li>- Nov 15, 2022 -</li>
@@ -71,7 +70,7 @@
             <div class="recent-sm col-lg-span-3 col-md-span-4 col-sm-span-4">
                 <div class="text-recent-container">
                     <span class="badge badge-must-read">Must Read</span>
-                    <a href="pages/post.html"><h3>The Mistborn Trilogy</h3></a>
+                    <a href="pages/post.html"><h2>The Mistborn Trilogy</h2></a>
                     <ul class="writer-info">
                         <li><img src="assets/images/avatars/Avatar-07.png" class="avatar" alt="avatar"><span>by Petter Tompson</span></li>
                         <li>- Mar 31, 2023</li>
@@ -82,7 +81,7 @@
             <div class="recent-sm col-lg-span-3 col-md-span-4 col-sm-span-4">
                 <div class="text-recent-container">
                     <span class="badge badge-must-read">Must Read</span>
-                    <a href="pages/post.html"><h3>The Name of The Wind</h3></a>
+                    <a href="pages/post.html"><h2>The Name of The Wind</h2></a>
                     <ul class="writer-info">
                         <li><img src="assets/images/avatars/Avatar-17.png" class="avatar" alt="avatar"><span>by George Alan</span></li>
                         <li>- Mar 31, 2023</li>
@@ -124,7 +123,7 @@
 
         <section id="comic-book" class="grid">
             <h2 class="col-lg-span-12 col-md-span-8 col-sm-span-4">Comic-Book Articles</h2>
-            <div class="box-type-03 col-lg-span-4 col-md-span-4 col-sm-span-4">
+            <div class="box-type-03 col-lg-span-4 col-md-span-8 col-sm-span-4">
                 <img class="cover" src="/assets/images/post-covers/post-img-02.jpg">
                 <div class="card-block">
                     <span class="badge badge-must-read">Must Read</span>
@@ -169,7 +168,7 @@
 
         <section id="technical" class="grid">
             <h2 class="col-lg-span-12 col-md-span-8 col-sm-span-4">Technical Books Articles</h2>
-            <div class="box-type-03 col-lg-span-4 col-md-span-4 col-sm-span-4">
+            <div class="box-type-03 col-lg-span-4 col-md-span-8 col-sm-span-4">
                 <img class="cover" src="/assets/images/post-covers/post-img-07.jpg">
                 <div class="card-block">
                     <span class="badge badge-must-read">Must Read</span>
@@ -214,7 +213,7 @@
 
         <section id="literature" class="grid">
             <h2 class="col-lg-span-12 col-md-span-8 col-sm-span-4">Literature Books Articles</h2>
-            <div class="box-type-03 col-lg-span-4 col-md-span-4 col-sm-span-4">
+            <div class="box-type-03 col-lg-span-4 col-md-span-8 col-sm-span-4">
                 <img class="cover" src="/assets/images/post-covers/post-img-03.jpg">
                 <div class="card-block">
                     <span class="badge badge-must-read">Must Read</span>
@@ -271,8 +270,8 @@
         </section>
     </main>
 
-    <div class="container_footer">
-        <footer id="footer" class="grid">
+    <footer id="footer">
+        <div class="content-footer grid">
             <section class="col-lg-span-3">
                 <h4>Navigation</h4>
             </section>
@@ -288,9 +287,10 @@
             <section class="col-lg-span-3">
                 <h4>Our Social Media</h4>
             </section>
-        </footer>
+        </div>
+
         <div class="copyright">
-            <div class="grid">
+            <div class="content-copyright grid">
                 <span>@2023 Blog. All rights reserved</span>
                 <nav>
                     <a href="#">Terms</a>
@@ -299,6 +299,6 @@
                 </nav>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
